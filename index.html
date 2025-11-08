@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Dhannina Srinivas - Full Stack Wizard"/>
+  <title>Dhannina | Portfolio</title>
+
+  <!-- ==== FONTS ==== -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
+
+  <!-- ==== ICONS ==== -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" 
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+  <!-- ==== TILT.JS ==== -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+
+  <!-- ==== TYPED.JS ==== -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <!-- ==== CSS ==== -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- ==== FAVICON ==== -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>wand</text></svg>"/>
+</head>
+<body>
+
+  <!-- ==== SKY & STARS ==== -->
+  <div class="sky"></div>
+  <div class="stars"></div>
+  <div id="particles"></div>
+
+  <!-- ==== DAY/NIGHT TOGGLE ==== -->
+  <div class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+    <div class="sun-moon">
+      <i class="fas fa-sun"></i>
+      <i class="fas fa-moon"></i>
+    </div>
+  </div>
+
+  <!-- ==== NAVBAR ==== -->
+  <nav class="navbar glass">
+    <div class="nav-container">
+      <div class="logo">
+        <span class="text">Srinivas Dhannina</span>
+        <span class="sparkle">(DSSK)</span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link glow">Home</a></li>
+        <li><a href="#skills" class="nav-link glow">Skills</a></li>
+        <li><a href="#projects" class="nav-link glow">Projects</a></li>
+        <li><a href="#contact" class="nav-link glow">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==== HERO SECTION ==== -->
+  <section id="home" class="hero">
+    <div class="hero-content glass glow-card">
+      <!-- HD HERO IMAGE (Retina-ready) -->
+      <div class="hero-img-container tilt">
+        <picture>
+          <!-- 2x for Retina displays -->
+          <source srcset="Darling-2x.jpg" media="(min-resolution: 2dppx)">
+          <img src="Darling.jpg" alt="Dhannina Srinivas" class="hero-img" loading="lazy">
+        </picture>
+        <div class="img-ring"></div>
+        <div class="img-glow"></div>
+      </div>
+
+      <h1>
+        Hi, I'm <span class="typed-text"></span><span class="cursor">|</span>
+      </h1>
+      <p class="subtitle">Mca  <span class="emoji">Graduate</span></p>
+      <p class="description">
+        I turn code into <span class="magic-text">magic</span> <span class="emoji">sparkles</span>
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary pulse ripple">Hire Me <span class="emoji">rocket</span></a>
+        <a href="Srinivas CV Resume.pdf" class="btn-secondary glow-btn ripple" download>Resume <i class="fas fa-download"></i></a>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <i class="fas fa-chevron-down bounce"></i>
+    </div>
+  </section>
+
+  <!-- ==== SKILLS SECTION ==== -->
+  <section id="skills" class="section">
+    <h2 class="section-title glow">Skills <span class="emoji">crystal_ball</span></h2>
+    <div class="skills-grid">
+      <div class="skill-card glass tilt glow-card">
+        <div class="icon"><i class="fab fa-java"></i></div>
+        <h3>Java</h3>
+        <div class="bar"><div class="fill" data-width="85"></div></div>
+      </div>
+      <div class="skill-card glass tilt glow-card">
+        <div class="icon"><i class="fab fa-html5"></i></div>
+        <h3>HTML</h3>
+        <div class="bar"><div class="fill" data-width="90"></div></div>
+      </div>
+      <div class="skill-card glass tilt glow-card">
+        <div class="icon"><i class="fab fa-css3-alt"></i></div>
+        <h3>CSS</h3>
+        <div class="bar"><div class="fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-card glass tilt glow-card">
+        <div class="icon"><i class="fab fa-python"></i></div>
+        <h3>Python</h3>
+        <div class="bar"><div class="fill" data-width="75"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== PROJECTS SECTION ==== -->
+  <section id="projects" class="section">
+    <h2 class="section-title glow">Featured Project <span class="emoji">trophy</span></h2>
+    <div class="projects-grid">
+      <div class="project-card glass tilt glow-card ripple">
+        <div class="project-img">
+          <i class="fas fa-robot fa-3x"></i>
+        </div>
+        <div class="project-info">
+          <h3>Explainable Misinformation Detection</h3>
+          <p>AI model with SHAP explanations for fake news.</p>
+          <div class="tech">
+            <span>Python</span><span>TensorFlow</span><span>SHAP</span>
+          </div>
+          <div class="links">
+            <a href="https://github.com/Srinivas9063" target="_blank" class="glow"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" class="glow"><i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==== CONTACT SECTION ==== -->
+  <section id="contact" class="section">
+    <h2 class="section-title glow">Get In Touch <span class="emoji">handshake</span></h2>
+    <div class="contact-grid">
+      <a href="mailto:danninasrinu1@gmail.com" class="contact-card glass tilt glow-card ripple" target="_blank">
+        <i class="fas fa-envelope"></i>
+        <p>Email</p>
+      </a>
+      <a href="https://www.linkedin.com/in/dhannina-srinivasa-santha-kumar-2b1238256/" class="contact-card glass tilt glow-card ripple" target="_blank">
+        <i class="fab fa-linkedin"></i>
+        <p>LinkedIn</p>
+      </a>
+      <a href="https://github.com/Srinivas9063" class="contact-card glass tilt glow-card ripple" target="_blank">
+        <i class="fab fa-github"></i>
+        <p>GitHub</p>
+      </a>
+      <a href="https://x.com/Santhu_xd" class="contact-card glass tilt glow-card ripple" target="_blank">
+        <i class="fab fa-x-twitter"></i>
+        <p>X (Twitter)</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==== FOOTER ==== -->
+  <footer class="glass">
+    <p>© 2025 Dhannina. Crafted with <i class="fas fa-heart pulse"></i> & <span class="emoji">magic_wand</span></p>
+  </footer>
+
+  <!-- ==== JAVASCRIPT (Inline for Performance) ==== -->
+  <script>
+    /* ==== TYPED TEXT ==== */
+    new Typed('.typed-text', {
+      strings: ['Dhannina', 'a Coder', 'a Wizard', 'a Creator'],
+      typeSpeed: 90,
+      backSpeed: 50,
+      loop: true,
+      cursorChar: '_'
+    });
+
+    /* ==== SMOOTH SCROLL ==== */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+
+    /* ==== MOBILE MENU ==== */
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    /* ==== 3D TILT ==== */
+    VanillaTilt.init(document.querySelectorAll(".tilt"), {
+      max: 12,
+      speed: 600,
+      glare: true,
+      "max-glare": 0.4,
+      gyroscope: true
+    });
+
+    /* ==== DAY/NIGHT TOGGLE (Persisted) ==== */
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      document.querySelector('.sun-moon').classList.toggle('active');
+      localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
+    });
+
+    // Load saved theme or system preference
+    if (localStorage.getItem('theme') === 'light' || 
+        (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+      document.body.classList.add('light-mode');
+      document.querySelector('.sun-moon').classList.add('active');
+    }
+
+    /* ==== SKILL BARS ANIMATION ==== */
+    const skillObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.querySelectorAll('.fill').forEach(bar => {
+            bar.style.width = bar.dataset.width + '%';
+          });
+        }
+      });
+    }, { threshold: 0.6 });
+    document.querySelectorAll('.skill-card').forEach(c => skillObserver.observe(c));
+
+    /* ==== PARTICLES (HD) ==== */
+    function createParticle() {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left = Math.random() * 100 + 'vw';
+      p.style.top = Math.random() * 100 + 'vh';
+      p.style.animationDuration = (Math.random() * 6 + 8) + 's';
+      p.style.setProperty('--size', Math.random() * 4 + 2 + 'px');
+      document.getElementById('particles').appendChild(p);
+      setTimeout(() => p.remove(), 15000);
+    }
+    setInterval(createParticle, 250);
+
+    /* ==== FLOATING ORBS ==== */
+    for (let i = 0; i < 8; i++) {
+      const orb = document.createElement('div');
+      orb.className = 'orb';
+      orb.style.left = Math.random() * 100 + 'vw';
+      orb.style.top = Math.random() * 100 + 'vh';
+      orb.style.animationDelay = Math.random() * 12 + 's';
+      orb.style.setProperty('--hue', Math.random() * 360);
+      document.body.appendChild(orb);
+    }
+
+    /* ==== RIPPLE EFFECT ON CLICK ==== */
+    document.querySelectorAll('.ripple').forEach(el => {
+      el.addEventListener('click', function (e) {
+        const ripple = document.createElement('span');
+        ripple.classList.add('ripple-effect');
+        const rect = this.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = x + 'px';
+        ripple.style.top = y + 'px';
+        this.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 800);
+      });
+    });
+  </script>
+</body>
+</html>
