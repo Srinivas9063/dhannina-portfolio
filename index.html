@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Dhannina Srinivas - Full Stack Wizard"/>
+  <meta name="description" content="Srinivas Dhannina - Full Stack Wizard | MCA Graduate"/>
   <title>Dhannina | Portfolio</title>
 
   <!-- ==== FONTS ==== -->
@@ -62,13 +62,16 @@
   <!-- ==== HERO SECTION ==== -->
   <section id="home" class="hero">
     <div class="hero-content glass glow-card">
-      <!-- HD HERO IMAGE (Retina-ready) -->
+      <!-- HD HERO IMAGE – WORKS ON MOBILE -->
       <div class="hero-img-container tilt">
-        <picture>
-          <!-- 2x for Retina displays -->
-          <source srcset="Darling-2x.jpg" media="(min-resolution: 2dppx)">
-          <img src="Darling.jpg" alt="Dhannina Srinivas" class="hero-img" loading="lazy">
-        </picture>
+        <img 
+          src="Darling.jpg" 
+          alt="Srinivas Dhannina" 
+          class="hero-img" 
+          loading="lazy"
+          width="200"
+          height="200"
+        >
         <div class="img-ring"></div>
         <div class="img-glow"></div>
       </div>
@@ -76,7 +79,7 @@
       <h1>
         Hi, I'm <span class="typed-text"></span><span class="cursor">|</span>
       </h1>
-      <p class="subtitle">Mca  <span class="emoji">Graduate</span></p>
+      <p class="subtitle">MCA <span class="emoji">Graduate</span></p>
       <p class="description">
         I turn code into <span class="magic-text">magic</span> <span class="emoji">sparkles</span>
       </p>
@@ -174,7 +177,7 @@
   <script>
     /* ==== TYPED TEXT ==== */
     new Typed('.typed-text', {
-      strings: ['Dhannina', 'a Coder', 'a Wizard', 'a Creator'],
+      strings: ['Srinivas', 'a Coder', 'a Wizard', 'an MCA Graduate'],
       typeSpeed: 90,
       backSpeed: 50,
       loop: true,
@@ -215,14 +218,14 @@
       localStorage.setItem('theme', document.body.classList.contains('light-mode') ? 'light' : 'dark');
     });
 
-    // Load saved theme or system preference
+    // Load saved theme
     if (localStorage.getItem('theme') === 'light' || 
         (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: light)').matches)) {
       document.body.classList.add('light-mode');
       document.querySelector('.sun-moon').classList.add('active');
     }
 
-    /* ==== SKILL BARS ANIMATION ==== */
+    /* ==== SKILL BARS ==== */
     const skillObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -234,7 +237,7 @@
     }, { threshold: 0.6 });
     document.querySelectorAll('.skill-card').forEach(c => skillObserver.observe(c));
 
-    /* ==== PARTICLES (HD) ==== */
+    /* ==== PARTICLES ==== */
     function createParticle() {
       const p = document.createElement('div');
       p.className = 'particle';
@@ -258,7 +261,7 @@
       document.body.appendChild(orb);
     }
 
-    /* ==== RIPPLE EFFECT ON CLICK ==== */
+    /* ==== RIPPLE EFFECT ==== */
     document.querySelectorAll('.ripple').forEach(el => {
       el.addEventListener('click', function (e) {
         const ripple = document.createElement('span');
